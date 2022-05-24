@@ -104,5 +104,12 @@ public class Customer_Registration
 		System.out.println("°í°´µî±Þ: "+lv);
 		System.out.println();
 	}
+	
+	public static void main(String[] args) 
+	{
+		Customer_Registration customermain = new Customer_Registration();
+	}
 }
+
+
 
