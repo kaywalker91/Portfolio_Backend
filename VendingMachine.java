@@ -2,7 +2,7 @@ package Study0510;
 
 import java.util.Scanner;
 
-public class VendingMachine2 
+public class VendingMachine 
 {
 
 	public static void main(String[] args) 
@@ -17,7 +17,7 @@ class Menu1
 {
 	Scanner sc = new Scanner(System.in);
 	
-	String menu[] = {"Äİ¶ó","»çÀÌ´Ù","¿ìÀ¯","È«Â÷","¹°","½Ç·ĞÆ¼"};
+	String menu[] = {"ì½œë¼","ì‚¬ì´ë‹¤","ìš°ìœ ","í™ì°¨","ë¬¼","ì‹¤ë¡ í‹°"};
 	int m1p=1000,m2p=2000,m3p=1500,m4p=1200,m5p=3000,m6p=1700;
 	int currentmoney=0,inputmoney;
 	int sel,selm;
@@ -42,7 +42,7 @@ class Menu1
 			}
 			else if(sel == 4)
 			{
-				System.out.println("ÇÁ·Î±×·¥ Á¾·á.");
+				System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ.");
 				break;	
 			}
 		}
@@ -51,66 +51,66 @@ class Menu1
 	void mainmenu1()
 	{
 		System.out.println("[------------]");
-		System.out.println("  ÇöÀçÀÜ¾×: "+currentmoney+"¿ø");
+		System.out.println("  í˜„ì¬ì”ì•¡: "+currentmoney+"ì›");
 		System.out.println("[------------]");
 
-		System.out.println("1.¸Ş´º¼±ÅÃ");
-		System.out.println("2.±İ¾×ÅõÀÔ");
-		System.out.println("3.ÀÜµ·¹İÈ¯");
-		System.out.println("4.Á¾·á");
-		System.out.print("¼±ÅÃ:");
+		System.out.println("1.ë©”ë‰´ì„ íƒ");
+		System.out.println("2.ê¸ˆì•¡íˆ¬ì…");
+		System.out.println("3.ì”ëˆë°˜í™˜");
+		System.out.println("4.ì¢…ë£Œ");
+		System.out.print("ì„ íƒ:");
 		sel = sc.nextInt();
 		System.out.println();	
 	}
 	
 	void menuchoice()
 	{
-		System.out.println("1¹ø ¸Ş´º: "+menu[0]);
-		System.out.println("1¹ø ¸Ş´º°¡°İ: "+m1p);
-		System.out.println("2¹ø ¸Ş´º: "+menu[1]);
-		System.out.println("2¹ø ¸Ş´º°¡°İ: "+m2p);
-		System.out.println("3¹ø ¸Ş´º: "+menu[2]);
-		System.out.println("3¹ø ¸Ş´º°¡°İ: "+m3p);
-		System.out.println("4¹ø ¸Ş´º: "+menu[3]);
-		System.out.println("4¹ø ¸Ş´º°¡°İ: "+m4p);
-		System.out.println("5¹ø ¸Ş´º: "+menu[4]);
-		System.out.println("5¹ø ¸Ş´º°¡°İ: "+m5p);
-		System.out.println("6¹ø ¸Ş´º: "+menu[5]);
-		System.out.println("6¹ø ¸Ş´º°¡°İ: "+m6p);
+		System.out.println("1ë²ˆ ë©”ë‰´: "+menu[0]);
+		System.out.println("1ë²ˆ ë©”ë‰´ê°€ê²©: "+m1p);
+		System.out.println("2ë²ˆ ë©”ë‰´: "+menu[1]);
+		System.out.println("2ë²ˆ ë©”ë‰´ê°€ê²©: "+m2p);
+		System.out.println("3ë²ˆ ë©”ë‰´: "+menu[2]);
+		System.out.println("3ë²ˆ ë©”ë‰´ê°€ê²©: "+m3p);
+		System.out.println("4ë²ˆ ë©”ë‰´: "+menu[3]);
+		System.out.println("4ë²ˆ ë©”ë‰´ê°€ê²©: "+m4p);
+		System.out.println("5ë²ˆ ë©”ë‰´: "+menu[4]);
+		System.out.println("5ë²ˆ ë©”ë‰´ê°€ê²©: "+m5p);
+		System.out.println("6ë²ˆ ë©”ë‰´: "+menu[5]);
+		System.out.println("6ë²ˆ ë©”ë‰´ê°€ê²©: "+m6p);
 		System.out.println();
 		
-		System.out.print("¸Ş´º¼±ÅÃ: ");
+		System.out.print("ë©”ë‰´ì„ íƒ: ");
 		selm = sc.nextInt();
 		
 		if(selm == 1)
 		{
-			System.out.println("1¹ø ¸Ş´º: "+menu[0]);
-			System.out.println("1¹ø ¸Ş´º°¡°İ: "+m1p);
+			System.out.println("1ë²ˆ ë©”ë‰´: "+menu[0]);
+			System.out.println("1ë²ˆ ë©”ë‰´ê°€ê²©: "+m1p);
 		}
 		else if(selm == 2)
 		{
-			System.out.println("2¹ø ¸Ş´º: "+menu[1]);
-			System.out.println("2¹ø ¸Ş´º°¡°İ: "+m2p);
+			System.out.println("2ë²ˆ ë©”ë‰´: "+menu[1]);
+			System.out.println("2ë²ˆ ë©”ë‰´ê°€ê²©: "+m2p);
 		}
 		else if(selm == 3)
 		{
-			System.out.println("3¹ø ¸Ş´º: "+menu[2]);
-			System.out.println("3¹ø ¸Ş´º°¡°İ: "+m3p);
+			System.out.println("3ë²ˆ ë©”ë‰´: "+menu[2]);
+			System.out.println("3ë²ˆ ë©”ë‰´ê°€ê²©: "+m3p);
 		}
 		else if(selm == 4)
 		{
-			System.out.println("4¹ø ¸Ş´º: "+menu[3]);
-			System.out.println("4¹ø ¸Ş´º°¡°İ: "+m4p);	
+			System.out.println("4ë²ˆ ë©”ë‰´: "+menu[3]);
+			System.out.println("4ë²ˆ ë©”ë‰´ê°€ê²©: "+m4p);	
 		}
 		else if(selm == 5)
 		{
-			System.out.println("5¹ø ¸Ş´º°¡°İ: "+m5p);
-			System.out.println("6¹ø ¸Ş´º: "+menu[5]);
+			System.out.println("5ë²ˆ ë©”ë‰´ê°€ê²©: "+m5p);
+			System.out.println("6ë²ˆ ë©”ë‰´: "+menu[5]);
 		}
 		else if(selm == 6)
 		{
-			System.out.println("6¹ø ¸Ş´º: "+menu[5]);
-			System.out.println("6¹ø ¸Ş´º°¡°İ: "+m6p);
+			System.out.println("6ë²ˆ ë©”ë‰´: "+menu[5]);
+			System.out.println("6ë²ˆ ë©”ë‰´ê°€ê²©: "+m6p);
 		}
 		
 		System.out.println();
@@ -118,9 +118,9 @@ class Menu1
 	
 	void input()
 	{
-		System.out.println("±İ¾×À» ÅõÀÔÇÏ¼¼¿ä.");
+		System.out.println("ê¸ˆì•¡ì„ íˆ¬ì…í•˜ì„¸ìš”.");
 		
-		System.out.print("ÅõÀÔ±İ¾×: ");
+		System.out.print("íˆ¬ì…ê¸ˆì•¡: ");
 		
 		inputmoney = sc.nextInt();
 		currentmoney += inputmoney;
@@ -133,14 +133,14 @@ class Menu1
 			
 			if(currentmoney>=0)
 			{
-				System.out.println("¼±ÅÃ¸Ş´º: "+menu[0]+"("+m1p+"¿ø"+")"+" ±¸ÀÔ¿Ï·á!");
+				System.out.println("ì„ íƒë©”ë‰´: "+menu[0]+"("+m1p+"ì›"+")"+" êµ¬ì…ì™„ë£Œ!");
 				
 				System.out.println();
 			}
 			else if(currentmoney<0)
 			{
-				System.out.println("±İ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù!");
-				System.out.println("ºÎÁ·ÇÑ ±İ¾×: " +(-currentmoney));
+				System.out.println("ê¸ˆì•¡ì´ ë¶€ì¡±í•©ë‹ˆë‹¤!");
+				System.out.println("ë¶€ì¡±í•œ ê¸ˆì•¡: " +(-currentmoney));
 				currentmoney = -currentmoney;
 				System.out.println();	
 			}
@@ -151,14 +151,14 @@ class Menu1
 			
 			if(currentmoney>=0)
 			{
-				System.out.println("¼±ÅÃ¸Ş´º: "+menu[1]+"("+m2p+"¿ø"+")"+" ±¸ÀÔ¿Ï·á!");
+				System.out.println("ì„ íƒë©”ë‰´: "+menu[1]+"("+m2p+"ì›"+")"+" êµ¬ì…ì™„ë£Œ!");
 				
 				System.out.println();
 			}
 			else if(currentmoney<0)
 			{
-				System.out.println("±İ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù!");
-				System.out.println("ºÎÁ·ÇÑ ±İ¾×: " +(-currentmoney));
+				System.out.println("ê¸ˆì•¡ì´ ë¶€ì¡±í•©ë‹ˆë‹¤!");
+				System.out.println("ë¶€ì¡±í•œ ê¸ˆì•¡: " +(-currentmoney));
 				currentmoney = -currentmoney;
 				System.out.println();	
 			}
@@ -170,14 +170,14 @@ class Menu1
 			
 			if(currentmoney>=0)
 			{
-				System.out.println("¼±ÅÃ¸Ş´º: "+menu[2]+"("+m3p+"¿ø"+")"+" ±¸ÀÔ¿Ï·á!");
+				System.out.println("ì„ íƒë©”ë‰´: "+menu[2]+"("+m3p+"ì›"+")"+" êµ¬ì…ì™„ë£Œ!");
 				
 				System.out.println();
 			}
 			else if(currentmoney<0)
 			{
-				System.out.println("±İ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù!");
-				System.out.println("ºÎÁ·ÇÑ ±İ¾×: " +(-currentmoney));
+				System.out.println("ê¸ˆì•¡ì´ ë¶€ì¡±í•©ë‹ˆë‹¤!");
+				System.out.println("ë¶€ì¡±í•œ ê¸ˆì•¡: " +(-currentmoney));
 				currentmoney = -currentmoney;
 				System.out.println();	
 			}
@@ -189,14 +189,14 @@ class Menu1
 			
 			if(currentmoney>=0)
 			{
-				System.out.println("¼±ÅÃ¸Ş´º: "+menu[3]+"("+m4p+"¿ø"+")"+" ±¸ÀÔ¿Ï·á!");
+				System.out.println("ì„ íƒë©”ë‰´: "+menu[3]+"("+m4p+"ì›"+")"+" êµ¬ì…ì™„ë£Œ!");
 				
 				System.out.println();
 			}
 			else if(currentmoney<0)
 			{
-				System.out.println("±İ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù!");
-				System.out.println("ºÎÁ·ÇÑ ±İ¾×: " +(-currentmoney));
+				System.out.println("ê¸ˆì•¡ì´ ë¶€ì¡±í•©ë‹ˆë‹¤!");
+				System.out.println("ë¶€ì¡±í•œ ê¸ˆì•¡: " +(-currentmoney));
 				currentmoney = -currentmoney;
 				System.out.println();	
 			}
@@ -208,14 +208,14 @@ class Menu1
 			
 			if(currentmoney>=0)
 			{
-				System.out.println("¼±ÅÃ¸Ş´º: "+menu[4]+"("+m5p+"¿ø"+")"+" ±¸ÀÔ¿Ï·á!");
+				System.out.println("ì„ íƒë©”ë‰´: "+menu[4]+"("+m5p+"ì›"+")"+" êµ¬ì…ì™„ë£Œ!");
 				
 				System.out.println();
 			}
 			else if(currentmoney<0)
 			{
-				System.out.println("±İ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù!");
-				System.out.println("ºÎÁ·ÇÑ ±İ¾×: " +(-currentmoney));
+				System.out.println("ê¸ˆì•¡ì´ ë¶€ì¡±í•©ë‹ˆë‹¤!");
+				System.out.println("ë¶€ì¡±í•œ ê¸ˆì•¡: " +(-currentmoney));
 				currentmoney = -currentmoney;
 				System.out.println();	
 			}
@@ -227,14 +227,14 @@ class Menu1
 			
 			if(currentmoney>=0)
 			{
-				System.out.println("¼±ÅÃ¸Ş´º: "+menu[5]+"("+m6p+"¿ø"+")"+" ±¸ÀÔ¿Ï·á!");
+				System.out.println("ì„ íƒë©”ë‰´: "+menu[5]+"("+m6p+"ì›"+")"+" êµ¬ì…ì™„ë£Œ!");
 				
 				System.out.println();
 			}
 			else if(currentmoney<0)
 			{
-				System.out.println("±İ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù!");
-				System.out.println("ºÎÁ·ÇÑ ±İ¾×: " +(-currentmoney));
+				System.out.println("ê¸ˆì•¡ì´ ë¶€ì¡±í•©ë‹ˆë‹¤!");
+				System.out.println("ë¶€ì¡±í•œ ê¸ˆì•¡: " +(-currentmoney));
 				currentmoney = -currentmoney;
 				System.out.println();	
 			}
@@ -245,7 +245,7 @@ class Menu1
 	{
 		if(currentmoney>=0)
 		{
-			System.out.println("¹İÈ¯±İ¾×: " +currentmoney);
+			System.out.println("ë°˜í™˜ê¸ˆì•¡: " +currentmoney);
 			currentmoney = 0;
 			System.out.println();	
 		}	
